@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manee Medical Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #00c6ff 0%, #7209b7 100%);
+            height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 0;
+        }
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+        .search-bar button {
+            background: white;
+            border: none;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+        }
+        .main-content {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            display: flex;
+            margin-top: 20px;
+        }
+        .left-column {
+            flex: 1;
+            padding-right: 40px;
+        }
+        .right-column {
+            flex: 1;
+            background: linear-gradient(135deg, #00c6ff 0%, #7209b7 100%);
+            border-radius: 10px;
+            padding: 30px;
+            color: white;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        h1 span {
+            color: #7209b7;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .btn-primary {
+            background: #00c6ff;
+            color: white;
+        }
+        .btn-secondary {
+            border: 2px solid #00c6ff;
+            color: #00c6ff;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .feature-item {
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: #e6f7ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+        }
+        .feature-icon i {
+            font-size: 24px;
+            color: #00c6ff;
+        }
+        .feature-text {
+            color: #333;
+            font-size: 14px;
+        }
+        .appointment-form h2 {
+            margin-bottom: 20px;
+        }
+        .form-row {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .form-row input, .form-row textarea, .form-row select {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .form-row input:last-child, .form-row select:last-child {
+            margin-right: 0;
+        }
+        .form-row textarea {
+            height: 100px;
+        }
+        .form-row input[type="date"], .form-row input[type="time"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            appearance: none;
+            -webkit-appearance: none;
+            background: white;
+            color: #333;
+        }
+        .submit-btn {
+            background: white;
+            color: #00c6ff;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Manee Medical Services</div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">BOOK</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="SEARCH">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="main-content">
+            <div class="left-column">
+                <h1>MAKE AN <span>APPOINTMENT</span></h1>
+                <p>Welcome to our medical clinic! We are dedicated to providing you with the highest quality of care. To schedule an appointment, please fill out the form below with your personal information and preferred appointment details.</p>
+                <a href="#" class="btn btn-primary">LOREM IPSUM</a>
+                <a href="#" class="btn btn-secondary">SIT DOLOR</a>
+                
+                <div class="features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-plus"></i>
+                        </div>
+                        <div class="feature-text">CLICK HERE</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="feature-text">CLICK HERE</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="feature-text">CLICK HERE</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="feature-text">CLICK HERE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="appointment-form">
+                    <h2>IT'S QUICK & EASY</h2>
+                    <form action="send_email.php" method="POST">
+                        <div class="form-row">
+                            <input type="text" name="firstName" placeholder="FIRST NAME" required>
+                            <input type="text" name="lastName" placeholder="LAST NAME" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" placeholder="EMAIL" required>
+                            <input type="tel" name="contact" placeholder="PHONE" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="date" name="appointmentDate" required>
+                            <input type="time" name="appointmentTime" required>
+                        </div>
+                        <div class="form-row">
+                            <select name="department" required>
+                                <option value="" disabled selected>SELECT DEPARTMENT</option>
+                                <option value="general">General</option>
+                                <option value="dental">Dental</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="neurology">Neurology</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <textarea name="message" placeholder="MESSAGE" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">BOOK APPOINTMENT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
